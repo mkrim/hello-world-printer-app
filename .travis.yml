@@ -6,3 +6,5 @@ install:
   - make deps
 script:
   - make test
+after_sccess:
+  - make docker_build
