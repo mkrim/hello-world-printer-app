@@ -8,3 +8,4 @@ script:
   - make test
 after_sccess:
   - make docker_build
+  - PASSWORD=${DOCKER_PASSWORD} make docker_push
